@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Chivo';
+    src: url("../../assets/fonts/chivo/Chivo-Regular.eot");
+    src: local("Chivo Bold"), local("ChivoBold"), url("../../assets/fonts/chivo/Chivo-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/chivo/Chivo-Regular.woff") format("woff"), url("../../assets/fonts/chivo/Chivo-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal; 
+}
+
+
+.btn {
+    width: 160px;
+    height: 50px;
+    border-radius: 19px;
+    border: none;
+    font-family: 'Chivo';
+    font-size: 16px;
+    letter-spacing: normal;
+}
+
+.mint {
+    background-color: #e6f5e2;
+    color: #000000;
+
+    &:hover {
+        background-color: white;
+        border: 2px solid #e6f5e2;
+    }
+}
+
+.plum {
+    background-color: #5c2a9d;
+    color: #ffffff;
+
+    &:hover {
+        background-color: white;
+        border: 2px solid #5c2a9d;
+        color: #5c2a9d;
+    }
+}

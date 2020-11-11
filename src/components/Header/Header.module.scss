@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Chivo - Bold';
+    src: url("../../assets/fonts/chivo/Chivo-Bold.eot");
+    src: local("Chivo Bold"), local("ChivoBold"), url("../../assets/fonts/chivo/Chivo-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/chivo/Chivo-Bold.woff") format("woff"), url("../../assets/fonts/chivo/Chivo-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Chivo';
+    src: url("../../assets/fonts/chivo/Chivo-Regular.eot");
+    src: local("Chivo Bold"), local("ChivoBold"), url("../../assets/fonts/chivo/Chivo-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/chivo/Chivo-Regular.woff") format("woff"), url("../../assets/fonts/chivo/Chivo-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.mainContainer {
+    margin: 70px 100px 0 100px;
+}
+
+.mainContainer, .navigationList  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigationList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding-right: 49px;
+        color: #000000;
+        font-family: 'Chivo - Bold';
+        font-size: 16px;
+        letter-spacing: normal;
+    }
+}
+
+.logo {
+    margin-right: 208px;
+}
+
+.btnContainer {
+    margin-left: auto;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  
+    .mainContainer {
+        margin: 20px 15px 0 15px;
+    }    
+
+    .logo {
+        margin-right: 15px;
+    }
+
+    .navigationList {
+        li {
+            padding-right: 10px;
+        }
+    }
+    
+  }
