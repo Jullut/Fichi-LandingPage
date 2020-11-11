@@ -9,7 +9,7 @@ const Header = () => {
 				<img src="/img/header/logo.png" alt="logo" />
 			</div>
 
-			<div className={styles.navigation}>
+			<div>
 				<ol className={styles.navigationList}>
 					<li>Home</li>
 					<li>About</li>

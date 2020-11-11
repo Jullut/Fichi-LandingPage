@@ -16,6 +16,8 @@
 
 .mainContainer {
     margin: 70px 100px 0 100px;
+    position: relative;
+    z-index: 2;
 }
 
 .mainContainer, .navigationList  {
@@ -40,6 +42,10 @@
 
 .logo {
     margin-right: 208px;
+
+    img {
+        pointer-events: none;
+    }
 }
 
 .btnContainer {

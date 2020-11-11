@@ -1,0 +1,98 @@
+@font-face {
+	font-family: 'Asul - Bold';
+	src: url('../../assets/fonts/asul/Asul-Bold.ttf');
+	src: local('Asul Bold'), local('Asul-Bold'), url('../../assets/fonts/asul/Asul-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chivo';
+    src: url("../../assets/fonts/chivo/Chivo-Regular.eot");
+    src: local("Chivo Bold"), local("ChivoBold"), url("../../assets/fonts/chivo/Chivo-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/chivo/Chivo-Regular.woff") format("woff"), url("../../assets/fonts/chivo/Chivo-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.socialMedia {
+    margin-top: 730px;
+
+    ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            .icon {
+            color: #a1a1a1;
+
+            &:hover {
+                color: #5c2a9d;
+            }
+            }
+        }
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.title {
+    color: #000000;
+    font-family: 'Asul - Bold';
+    font-size: 60px;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.description {
+    color: #a1a1a1;
+    font-family: 'Chivo';
+    font-size: 18px;
+    letter-spacing: normal;
+    text-align: left;
+}
+
+.img {
+    position: relative;
+    bottom: 300px;
+    z-index: 1;
+
+    img {
+        pointer-events: none;
+    }
+}
+
+.text {
+    width: 400px;
+    margin-top: 100px;
+
+    Button {
+        margin: 60px 30px 0 5px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  
+    .img {
+        display: none;
+    }
+
+    .mainContainer {
+        margin-left: 30px;
+    }
+    
+    .socialMedia {
+        margin-top: 450px;
+    }    
+    
+  }
