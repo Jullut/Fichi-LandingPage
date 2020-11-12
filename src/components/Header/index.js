@@ -4,7 +4,7 @@ import Button from '../Button';
 
 const Header = () => {
 	return (
-		<div className={styles.mainContainer}>
+		<header className={styles.mainContainer}>
 			<div className={styles.logo}>
 				<img src="/img/header/logo.png" alt="logo" />
 			</div>
@@ -21,7 +21,7 @@ const Header = () => {
 			<div className={styles.btnContainer}>
 				<Button color="mint">Get Start</Button>
 			</div>
-		</div>
+		</header>
 	);
 };
 

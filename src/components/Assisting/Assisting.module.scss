@@ -81,18 +81,44 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 1280px) {
   
     .img {
         display: none;
     }
 
     .mainContainer {
-        margin-left: 30px;
+        margin-left: 0;
+        flex-wrap: wrap;
     }
     
     .socialMedia {
-        margin-top: 450px;
-    }    
+        margin-top: 50px;
+        width: 100vw;
+            ol {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                li {
+                    &:nth-child(2) {
+                        padding: 0 20px;
+                    }
+                }
+            }
+    }  
+    
+    .text {
+        width: 320px;
+        margin-top: 0;
+
+        Button {
+            margin: 0;
+        }
+    }
+
+    .title, .description {
+        text-align: center;
+    }
     
   }
