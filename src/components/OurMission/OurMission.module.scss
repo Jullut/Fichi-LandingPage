@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Chivo - Bold';
+    src: url("../../assets/fonts/chivo/Chivo-Bold.eot");
+    src: local("Chivo Bold"), local("ChivoBold"), url("../../assets/fonts/chivo/Chivo-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/chivo/Chivo-Bold.woff") format("woff"), url("../../assets/fonts/chivo/Chivo-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal; 
+}
+
+@font-face {
+	font-family: 'Asul - Bold';
+	src: url('../../assets/fonts/asul/Asul-Bold.ttf');
+	src: local('Asul Bold'), local('Asul-Bold'), url('../../assets/fonts/asul/Asul-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chivo';
+    src: url("../../assets/fonts/chivo/Chivo-Regular.eot");
+    src: local("Chivo Bold"), local("ChivoBold"), url("../../assets/fonts/chivo/Chivo-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/chivo/Chivo-Regular.woff") format("woff"), url("../../assets/fonts/chivo/Chivo-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.mainContainer {
+    margin-bottom: 150px;
+}
+
+.title {
+
+        h6 {
+            margin: 0 0 15px 0;
+            color: #5c2a9d;
+            font-family: 'Chivo - Bold';
+            font-size: 14px;
+            letter-spacing: normal;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 auto;
+            width: 654px;
+            color: #000000;
+            font-family: 'Asul - Bold';
+            font-size: 48px;
+            letter-spacing: normal;
+            text-align: center;
+
+            span {
+                color: #b5076b;
+            }
+        }
+}
+
+.carousel {
+    margin-top: 80px;  
+}
+
+.subTitle {
+    color: #5c2a9d;
+    font-family: 'Chivo - Bold';
+    font-size: 18px;
+    letter-spacing: normal;
+    // text-align: left;
+}
+
+.description {
+    // width: 295px;
+    color: #a1a1a1;
+    font-family: 'Chivo';
+    font-size: 16px;
+    letter-spacing: normal;
+    // text-align: left;
+}
