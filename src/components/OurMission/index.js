@@ -54,9 +54,6 @@ const OurMission = () => {
 					keyBoardControl={true}
 					arrows={false}
 					focusOnSelect={true}
-					afterChange={() => {
-						alert('uwu');
-					}}
 				>
 					{cards.map(({ title, description, img }) => (
 						<div className={styles.carouselItem}>

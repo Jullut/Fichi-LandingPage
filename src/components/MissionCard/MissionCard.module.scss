@@ -1,16 +1,51 @@
 .subTitle {
+    width: 295px;
     color: #5c2a9d;
     font-family: 'Chivo - Bold';
     font-size: 18px;
     letter-spacing: normal;
-    // text-align: left;
+    text-align: left;
+    margin: 15px auto;
 }
 
 .description {
-    // width: 295px;
+    width: 295px;
     color: #a1a1a1;
     font-family: 'Chivo';
     font-size: 16px;
     letter-spacing: normal;
-    // text-align: left;
+    text-align: left;
+    margin: 20px auto;
 }
+
+.img {
+    width: 112px;
+    margin: 0 auto;
+    padding-right: 185px;
+    padding-top: 50px;
+} 
+
+.mainContainer {
+    box-shadow: 22px 32px 95px rgba(92, 42, 157, 0.11);
+    border-radius: 30px;
+    height: 360px;
+    width: 370px;
+    margin: 90px auto;
+}
+
+.btn {
+    padding-left: 35px;
+}
+
+@media (min-width: 320px) and (max-width: 370px) {
+  
+    .mainContainer {
+        width: 320px;
+        padding-left: 15px;
+    }
+
+    .btn {
+        padding-left: 0;
+    }
+    
+  }
