@@ -56,19 +56,21 @@
     margin-top: 80px;  
 }
 
-.subTitle {
-    color: #5c2a9d;
-    font-family: 'Chivo - Bold';
-    font-size: 18px;
-    letter-spacing: normal;
-    // text-align: left;
-}
+@media (min-width: 320px) and (max-width: 425px) {
+  
+    .title {
+        h1 {
+            width: 320px;
+        }
+    }
+    
+  }
 
-.description {
-    // width: 295px;
-    color: #a1a1a1;
-    font-family: 'Chivo';
-    font-size: 16px;
-    letter-spacing: normal;
-    // text-align: left;
-}
+
+  @media (min-width: 320px) and (max-width: 1280px) {
+  
+    .mainContainer {
+       margin-top: 100px;
+    }
+    
+  }

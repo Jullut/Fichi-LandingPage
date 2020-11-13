@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './OurMission.module.scss';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import MissionCard from '../MissionCard';
 
 const OurMission = () => {
 	const responsive = {
@@ -18,6 +19,24 @@ const OurMission = () => {
 			items: 1
 		}
 	};
+
+	const cards = [
+		{
+			title: 'Accountancy',
+			description: 'Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna.',
+			img: '/img/mission/money.png'
+		},
+		{
+			title: 'Corporate Finance',
+			description: 'Nullam lacinia faucibus risus, a euismod lorem tincidunt id.',
+			img: '/img/mission/support.png'
+		},
+		{
+			title: 'Tax & Legal',
+			description: 'Class aptent taciti sociosqu ad litora torquent per conubia nostra',
+			img: '/img/mission/legal.png'
+		}
+	];
 
 	return (
 		<div className={styles.mainContainer}>
@@ -39,27 +58,11 @@ const OurMission = () => {
 						alert('uwu');
 					}}
 				>
-					<div className={styles.carouselItem}>
-						<img src="/img/mission/money.png" alt="money" />
-						<p className={styles.subTitle}>Accountancy</p>
-						<p className={styles.description}>
-							Vestibulum imperdiet nibh vel magna lacinia ultrices. Sed id interdum urna.
-						</p>
-					</div>
-					<div>
-						<img src="/img/mission/support.png" alt="support" />
-						<p className={styles.subTitle}>Corporate Finance</p>
-						<p className={styles.description}>
-							Nullam lacinia faucibus risus, a euismod lorem tincidunt id.
-						</p>
-					</div>
-					<div>
-						<img src="/img/mission/legal.png" alt="legal" />
-						<p className={styles.subTitle}>Tax & Legal</p>
-						<p className={styles.description}>
-							Class aptent taciti sociosqu ad litora torquent per conubia nostra
-						</p>
-					</div>
+					{cards.map(({ title, description, img }) => (
+						<div className={styles.carouselItem}>
+							<MissionCard title={title} description={description} img={img} />
+						</div>
+					))}
 				</Carousel>
 			</div>
 		</div>
