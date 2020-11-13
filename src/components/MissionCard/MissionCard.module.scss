@@ -25,16 +25,24 @@
     padding-top: 50px;
 } 
 
+.btn {
+    padding-left: 35px;
+    display: none;
+}
+
 .mainContainer {
-    box-shadow: 22px 32px 95px rgba(92, 42, 157, 0.11);
-    border-radius: 30px;
     height: 360px;
     width: 370px;
     margin: 90px auto;
-}
 
-.btn {
-    padding-left: 35px;
+    &:hover {
+        box-shadow: 22px 32px 95px rgba(92, 42, 157, 0.11);
+        border-radius: 30px;
+
+        .btn {
+        display: block;
+        }
+    }
 }
 
 @media (min-width: 320px) and (max-width: 370px) {
