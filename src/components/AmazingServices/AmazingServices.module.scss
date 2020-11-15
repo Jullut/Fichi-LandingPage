@@ -1,0 +1,175 @@
+.mainContainer {
+    background: url("../../assets/img/amazingServices/bg.png")  no-repeat center center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 140px;
+    margin-bottom: 100px;
+}
+
+.manImg {
+    position: absolute;
+    left: 250px;
+    bottom: 500px;
+    z-index: 2;
+}
+
+.servicesList {
+    ol {
+        list-style: none;
+        margin-right: 70px;
+
+        li {
+            margin-top: 60px;
+
+            h3 {
+                color: #5c2a9d;
+                font-family: 'Chivo - Bold';
+                font-size: 18px;
+                letter-spacing: normal;
+            }
+
+            p {
+                width: 400px;
+                color: #a1a1a1;
+                font-family: 'Chivo';
+                font-size: 16px;
+                letter-spacing: normal;
+            }
+        }
+    }
+}
+
+.chart, .dice, .rocket {
+    width: 32px;
+    height: 31px;
+    font-size: 30px;
+    letter-spacing: normal;
+    text-align: center;
+    padding: 30px;
+    border-radius: 34px;
+    float: left;
+    margin-right: 36px;
+}
+
+.chart {
+    color: #b5076b;
+    background-color: #e6f5e2;
+}
+
+.dice {
+    color: #45046a;;
+    background-color: #f6e7da;
+}
+
+.rocket {
+    color: #5c2a9d;
+    background-color: #efe3fe;
+}
+
+.text {
+    margin-left: 100px;
+    position: relative;
+    bottom: 100px;
+
+    h6 {
+        color: #5c2a9d;
+        font-family: 'Chivo - Bold';
+        font-size: 14px;
+        letter-spacing: normal;
+    }
+
+    h1 {
+        width: 420px;
+        color: #000000;
+        font-family: 'Asul - Bold';
+        font-size: 48px;
+        letter-spacing: normal;
+
+        span {
+            color: #b5076b;
+        }
+    }
+
+    p {
+        width: 455px;
+        color: #a1a1a1;
+        font-family: 'Chivo';
+        font-size: 16px;
+        letter-spacing: normal;
+    }
+}
+
+.stringImg {
+    position: relative;
+    top: 200px;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  
+    .mainContainer {
+        flex-direction: column;
+    }
+
+    .manImg {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        margin: 0 auto;
+    }
+
+    .servicesList {
+        margin: 0 auto;
+        ol {
+            margin-right: 0;
+        }
+
+  }
+
+    .stringImg {
+        position: relative;
+        top: 0;
+        margin: 10px auto;
+    }
+
+    .text {
+        margin-left: 0;
+        position: relative;
+        bottom: 0;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+    .text {
+        text-align: center;
+
+        h1 {
+            width: 320px;
+        }
+    
+        p {
+            width: 320px;
+        }
+}
+
+
+.servicesList {
+    ol {
+        padding: 0;
+
+        li {
+            margin-left: 0 !important;
+
+            p {
+                width: 320px;
+            }
+        }
+
+}
+}
+}
