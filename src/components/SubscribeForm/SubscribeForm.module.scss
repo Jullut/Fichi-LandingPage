@@ -1,0 +1,94 @@
+.text {
+    text-align: center;
+    margin-top: 100px;
+
+    .title {
+        color: #000000;
+        font-family: 'Asul - Bold';
+        font-size: 48px;
+        letter-spacing: normal;
+        margin: 0;
+
+        span {
+            color: #b5076b;
+        }
+    }
+
+    .subTitle {
+    color: #a1a1a1;
+    font-family: 'Chivo';
+    font-size: 18px;
+    letter-spacing: normal;
+    }
+}
+
+.form {
+    margin-top: 37px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    display:flex;
+    flex-direction:row;
+
+    form {
+        position: relative;
+    }
+}
+
+.formInput {
+    height: 58px;
+    width: 500px;
+    padding: 0 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    color: #a1a1a1;
+    font-family: 'Chivo';
+    font-size: 16px;
+    letter-spacing: normal;
+    flex-grow:2;
+}
+
+.btn {
+    width: 160px;
+    height: 50px;
+    border-radius: 19px;
+    background-color: #5c2a9d;
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Chivo';
+    font-size: 16px;
+    letter-spacing: normal;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+     &:hover {
+        background-color: white;
+        color: #5c2a9d;
+        border: 2px solid #5c2a9d;
+     }
+}
+
+.error {
+    color: 	#c91414;
+    font-family: 'Chivo';
+}
+
+.succes {
+    color:  #30a00e;
+    font-family: 'Chivo';
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+    .formInput {
+        width: 250px;
+    }
+
+    .btn {
+        width: 90px;
+    }
+
+}
