@@ -1,0 +1,165 @@
+.mainContainer {
+    margin-top: 250px;
+    position: relative;
+}
+
+.testimonial {
+    width: 488px;
+    color: #5c2a9d;
+    font-family: 'Asul';
+    font-size: 30px;
+    letter-spacing: normal;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.name {
+    color: #000000;
+    font-family: "Chivo - Bold";
+    font-size: 16px;
+    letter-spacing: -0.16px;
+    line-height: normal;
+    text-align: center;
+
+    span {
+        color: #a1a1a1;
+        font-family: 'Chivo';
+        font-size: 14px;
+        letter-spacing: normal;
+    }
+}
+
+.stringImg {
+    text-align: center;
+    margin-top: 67px;
+}
+
+.blueWoman, .navyMan, .navyWoman, .oceanWoman, .orangeMan, .redWoman, .whiteMan, .navyManSecond {
+    position: absolute;
+}
+
+.blueWoman {
+    left: 375px;
+    top: 65px;
+}
+
+.navyMan {
+    bottom: 150px;
+    left: 750px;
+}
+
+.navyWoman {
+    right: 500px;
+    bottom: 170px;
+}
+
+.oceanWoman {
+    right: 700px;
+    bottom: 250px;
+}
+
+.orangeMan {
+    left: 700px;
+    top: -100px;
+}
+
+.redWoman {
+    right: 600px;
+    top: -50px;
+}
+
+.whiteMan {
+    left: 600px;
+    top: 200px
+}
+
+.navyManSecond {
+    right: 400px;
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .blueWoman {
+        left: 175px;
+    }
+    
+    .navyMan {
+        left: 450px;
+    }
+    
+    .navyWoman {
+        right: 300px;
+    }
+    
+    .oceanWoman {
+        right: 500px;
+    }
+    
+    .orangeMan {
+        left: 500px;
+    }
+    
+    .redWoman {
+        right: 400px;
+    }
+    
+    .whiteMan {
+        left: 400px;
+    }
+    
+    .navyManSecond {
+        right: 200px;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .blueWoman {
+        left: 75px;
+    }
+    
+    .navyMan, .orangeMan {
+        left: 250px;
+    }
+    
+    .navyWoman {
+        right: 150px;
+    }
+    
+    .oceanWoman {
+        right: 250px;
+    }
+    
+    .redWoman {
+        right: 200px;
+    }
+    
+    .whiteMan {
+        left: 200px;
+    }
+    
+    .navyManSecond {
+        right: 100px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .blueWoman, .navyMan, .navyWoman, .oceanWoman, .orangeMan, .redWoman, .whiteMan, .navyManSecond {
+        position: static;
+    }
+
+    .imgs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 320px;
+    }
+
+}

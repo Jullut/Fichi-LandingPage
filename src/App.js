@@ -5,6 +5,7 @@ import WeAre from './components/WeAre';
 import OurMission from './components/OurMission';
 import FeaturedWork from './components/FeaturedWork';
 import AmazingServices from './components/AmazingServices';
+import Testimonials from './components/Testimonials';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 library.add(fab);
@@ -20,6 +21,7 @@ function App() {
 			<OurMission />
 			<FeaturedWork />
 			<AmazingServices />
+			<Testimonials />
 		</div>
 	);
 }

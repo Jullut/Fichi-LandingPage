@@ -15,6 +15,14 @@ font-style: normal;
 }
 
 @font-face {
+  font-family: 'Asul';
+  src: url('./assets/fonts/asul/Asul-Regular.ttf');
+  src: local('Asul-Regular'), local('Asul-Regular'), url('./assets/fonts/asul/Asul-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  }
+
+@font-face {
   font-family: 'Chivo';
   src: url("./assets/fonts/chivo/Chivo-Regular.eot");
   src: local("Chivo Bold"), local("ChivoBold"), url("./assets/fonts/chivo/Chivo-Regular.eot?#iefix") format("embedded-opentype"), url("./assets/fonts/chivo/Chivo-Regular.woff") format("woff"), url("./assets/fonts/chivo/Chivo-Regular.ttf") format("truetype");
