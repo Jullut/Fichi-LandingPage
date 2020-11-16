@@ -43,7 +43,9 @@ const OurMission = () => {
 			<div className={styles.title}>
 				<h6>Our Mission</h6>
 				<h1>
-					We want to contribute to the <span>creation</span> of valua
+					We want to contribute to the
+					<span> creation</span>
+					<img src="/img/mission/line.png" alt="mint line" className={styles.line} /> of valua
 				</h1>
 			</div>
 

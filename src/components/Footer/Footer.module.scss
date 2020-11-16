@@ -1,0 +1,130 @@
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #f6e7da;
+    border-radius: 50px;
+    margin: 30px;
+    padding: 150px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    color: #000000;
+    font-family: 'Chivo';
+    font-size: 14px;
+    letter-spacing: normal;
+    margin-right: 150px;
+    margin-top: 25px;
+
+    img {
+        pointer-events: none;
+    }
+}
+
+.links {
+    margin-right: 145px;
+
+    p {
+        color: #000000;
+        font-family: 'Chivo - Bold';
+        font-size: 18px;
+        letter-spacing: normal;
+        margin-bottom: 40px;
+    }
+
+    ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        color: #5c2a9d;
+        font-family: 'Chivo';
+        font-size: 16px;
+        letter-spacing: normal;
+
+        li {
+            margin-bottom: 25px;
+        }
+    }
+
+}
+
+.contactUs {
+    margin-right: 68px;
+
+    .title {
+    color: #000000;
+    font-family: 'Chivo - Bold';
+    font-size: 18px;
+    letter-spacing: normal;
+    }
+
+    .email {
+    color: #5c2a9d;
+    font-family: 'Chivo';
+    font-size: 30px;
+    letter-spacing: normal;
+    text-decoration: underline;
+    }
+
+    .contacts {
+    color: #000000;
+    font-family: 'Chivo';
+    font-size: 16px;
+    letter-spacing: normal;
+    }
+}
+
+.facebook, .twitter, .instagram {
+    font-size: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 15px;
+}
+
+.facebook, .twitter {
+    margin-right: 30px;
+}
+
+.facebook {
+    color: #5c2a9d;
+}
+
+.twitter {
+    color: #45046a;
+}
+
+.instagram {
+    color: #b5076b;
+}
+
+.icons {
+    margin-top: 25px;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+    .mainContainer {
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+}   
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .contactUs {
+        margin-right: 0;
+    } 
+
+    .links {
+        margin-right: 0;
+    }   
+    
+    .logo {
+        margin-right: 0;
+    }
+
+}
