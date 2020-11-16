@@ -27,8 +27,6 @@
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    display:flex;
-    flex-direction:row;
 
     form {
         position: relative;
@@ -46,7 +44,10 @@
     font-family: 'Chivo';
     font-size: 16px;
     letter-spacing: normal;
-    flex-grow:2;
+
+    &:focus  {
+        outline: none;
+    }
 }
 
 .btn {

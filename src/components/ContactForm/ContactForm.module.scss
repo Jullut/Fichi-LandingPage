@@ -1,0 +1,142 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.text {
+    margin-right: 740px;
+    margin-bottom: 30px;
+
+    h1 {
+        color: #000000;
+        font-family: 'Asul - Bold';
+        font-size: 48px;
+        letter-spacing: normal;
+    }
+
+    p {
+        width: 320px;
+        color: #a1a1a1;
+        font-family: 'Chivo';
+        font-size: 16px;
+        letter-spacing: normal;
+    }
+
+}
+
+.form {
+
+    form {
+    display: flex;
+    flex-direction: column;
+        
+        .firstRow {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.formInput, .textInput {
+    color: #a1a1a1;
+    font-family: 'Chivo';
+    font-size: 14px;
+    letter-spacing: normal;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+    margin: 0 20px;
+
+    &:focus  {
+        outline: none;
+        border-bottom: 1px solid  #000000;
+        color: #000000;
+    }
+
+}
+
+.formInput {
+    width: 320px;
+}
+
+.textInput {
+    display: block;
+    margin-top: 45px;
+    width: 1060px;
+}
+
+.btn {
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 160px;
+    height: 50px;
+    border-radius: 19px;
+    background-color: #5c2a9d;
+    border: none;
+    color: #ffffff;
+    font-family: 'Chivo';
+    font-size: 16px;
+    letter-spacing: normal;
+    text-align: center;
+
+    &:hover {
+        background-color: transparent;
+        color: #5c2a9d;
+        border: 2px solid #5c2a9d;
+
+    }
+}
+
+.error {
+    margin-left: 20px;
+    color: 	#c91414;
+    font-family: 'Chivo';
+}
+
+.succes {
+    margin-left: 20px;
+    color: 	#30a00e;
+    font-family: 'Chivo';
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+
+    .text {
+        margin-right: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+            .firstRow {
+                justify-content: center;
+            }
+    }
+
+    .formInput {
+       margin-bottom: 20px;
+    }
+
+}
+
+
+@media (min-width: 426px) and (max-width: 1024px) {
+
+    .textInput {
+        width: 500px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+
+    .textInput {
+        width: 320px;
+    }
+
+}

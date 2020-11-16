@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './SubscribeForm.module.scss';
 import { useForm } from 'react-hook-form';
 
@@ -10,7 +10,7 @@ const SubscribeForm = () => {
 		e.target.reset();
 	};
 
-	const { isSubmitSuccessful, isSubmitted } = formState;
+	const { isSubmitSuccessful } = formState;
 
 	return (
 		<div>
@@ -41,7 +41,7 @@ const SubscribeForm = () => {
 					errors.email.type === 'pattern' && (
 						<p className={styles.error}>Please, enter valid email address</p>
 					)}
-					{isSubmitted && <p className={styles.succes}>Thank you for subscribing!</p>}
+					{isSubmitSuccessful && <p className={styles.succes}>Thank you for subscribing!</p>}
 				</form>
 			</div>
 		</div>

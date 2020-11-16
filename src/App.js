@@ -7,6 +7,7 @@ import FeaturedWork from './components/FeaturedWork';
 import AmazingServices from './components/AmazingServices';
 import Testimonials from './components/Testimonials';
 import SubscribeForm from './components/SubscribeForm';
+import ContactForm from './components/ContactForm';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 library.add(fab);
@@ -24,6 +25,7 @@ function App() {
 			<AmazingServices />
 			<Testimonials />
 			<SubscribeForm />
+			<ContactForm />
 		</div>
 	);
 }
