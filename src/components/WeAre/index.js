@@ -1,15 +1,18 @@
 import React from 'react';
 import styles from './WeAre.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const WeAre = () => {
 	return (
 		<div className={styles.mainContainer}>
-			<div className={styles.img}>
+			<div className={styles.img} data-aos="fade-right">
 				<img src="/img/weare/phone-woman.png" alt="phone woman" />
 			</div>
 
-			<div className={styles.text}>
+			<div className={styles.text} data-aos="fade-left">
 				<h6>Who We Are</h6>
 				<h1>An independent consulting firm</h1>
 				<p>

@@ -3,6 +3,9 @@ import styles from './OurMission.module.scss';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import MissionCard from '../MissionCard';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const OurMission = () => {
 	const responsive = {
@@ -39,7 +42,7 @@ const OurMission = () => {
 	];
 
 	return (
-		<div className={styles.mainContainer}>
+		<div className={styles.mainContainer} data-aos="zoom-in">
 			<div className={styles.title}>
 				<h6>Our Mission</h6>
 				<h1>

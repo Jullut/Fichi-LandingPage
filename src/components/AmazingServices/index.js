@@ -2,6 +2,9 @@ import React from 'react';
 import styles from './AmazingServices.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket, faDice, faChartPie } from '@fortawesome/free-solid-svg-icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 const AmazingServices = () => {
 	const services = [
@@ -30,7 +33,7 @@ const AmazingServices = () => {
 				<img src="/img/amazingServices/spyglass-man.png" alt="strange spyglass man" />
 			</div>
 
-			<div className={styles.servicesList}>
+			<div className={styles.servicesList} data-aos="zoom-in-up">
 				<ol>
 					{services.map(({ icon, title, description, style }, index) => (
 						<li style={{ marginLeft: index === 1 ? '200px' : 'none' }}>
@@ -46,7 +49,7 @@ const AmazingServices = () => {
 				<img src="img/amazingServices/red-string-top.png" alt="curly red string" />
 			</div>
 
-			<div className={styles.text}>
+			<div className={styles.text} data-aos="zoom-in-down">
 				<h6>Amazing Services</h6>
 				<h1>
 					We provide smart and effective <span>solutions</span>
